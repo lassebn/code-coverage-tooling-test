@@ -44,3 +44,10 @@ jobs:
              mv .*/target/scala-2.12/scoverage-report /tmp/artifacts/scoverage-report/
       - store_artifacts:
           path: /tmp/artifacts
+      - run:
+          name: Upload to Codecov.io
+          command: bash <(curl -s https://codecov.io/bash)
+      - run:
+          name: Upload to Coveralls.io
+          command: sbt coveralls
+
