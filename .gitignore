@@ -1,0 +1,16 @@
+# Sbt + scala specific
+*.class
+target
+
+# Intellij specific
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
+# OS x specific
+.DS_Store
+
+# intellij worksheet files
+*.sc
