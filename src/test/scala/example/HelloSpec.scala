@@ -10,4 +10,8 @@ class HelloSpec extends FlatSpec with Matchers {
   it should "be able to add" in {
     Hello.add() shouldEqual 4
   }
+
+  it should "be able to sub" in {
+    Hello.sub() shouldEqual 15
+  }
 }
