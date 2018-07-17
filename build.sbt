@@ -8,5 +8,10 @@ lazy val root = (project in file(".")).
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "testing-code-coverage-tools",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies += scalaTest,
+    libraryDependencies += pegdown,
+    testOptions in Test ++= Seq(
+      Tests.Argument(TestFrameworks.ScalaTest, "-h", "target/report/unittest"),
+      Tests.Argument(TestFrameworks.ScalaTest, "-o")
+    )
   )
