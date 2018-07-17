@@ -41,4 +41,4 @@ jobs:
           command: |
              mkdir -p /tmp/artifacts/unittest-report/ /tmp/artifacts/scoverage-report/
              mv .*/target/report/unittest/*html .*/target/report/unittest/*js .*/target/report/unittest/*css /tmp/artifacts/unittest-report/
-             mv .*/target/scala-2.11/scoverage-report /tmp/artifacts/scoverage-report/
+             mv .*/target/scala-2.12/scoverage-report /tmp/artifacts/scoverage-report/
