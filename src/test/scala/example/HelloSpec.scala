@@ -10,4 +10,8 @@ class HelloSpec extends FlatSpec with Matchers {
   it should "be able to add" in {
     Hello.add() shouldEqual 4
   }
+
+  it should "perform black magic" in {
+    Hello.blackMagic(6) shouldEqual "Wauw"
+  }
 }
